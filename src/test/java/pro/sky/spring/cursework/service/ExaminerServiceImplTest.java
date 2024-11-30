@@ -73,7 +73,6 @@ public class ExaminerServiceImplTest {
     assertEquals("вопрос не найден:[Недостаточно уникальных вопросов для запроса.]",
         exception.getMessage());
   }
-
 }
 
 

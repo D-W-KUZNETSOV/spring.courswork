@@ -35,7 +35,6 @@ public class ExaminerServiceImpl implements ExaminerService {
         if (questions.size() < amount) {
 
           throw new QuestionNotFoundException("Недостаточно уникальных вопросов для запроса.");
-
         }
         break;
       }

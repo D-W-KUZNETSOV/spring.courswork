@@ -26,7 +26,6 @@ public class ExamController {
     if (amount <= 0) {
       return ResponseEntity.badRequest().build();
     }
-
     Collection<Question> questions = examinerService.getQuestions(amount);
     return ResponseEntity.ok(questions);
   }

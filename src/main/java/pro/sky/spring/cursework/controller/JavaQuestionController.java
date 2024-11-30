@@ -35,5 +35,4 @@ public class JavaQuestionController {
   public Collection<Question> getAll() {
     return questionService.getAll();
   }
-
 }

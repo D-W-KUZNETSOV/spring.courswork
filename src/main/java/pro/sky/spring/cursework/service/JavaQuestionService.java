@@ -18,7 +18,6 @@ public class JavaQuestionService implements QuestionService {
 
   }
 
-
   @Override
   public Question add(String question, String answer) {
     Question model = new Question(question, answer);

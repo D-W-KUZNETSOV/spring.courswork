@@ -5,6 +5,7 @@ import pro.sky.spring.cursework.model.Question;
 
 public interface ExaminerService {
 
+
   Collection<Question> getQuestions(int amount);
 }
 

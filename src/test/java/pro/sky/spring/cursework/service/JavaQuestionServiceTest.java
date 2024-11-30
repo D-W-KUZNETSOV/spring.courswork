@@ -137,5 +137,6 @@ class JavaQuestionServiceTest {
 
     assertEquals(question2, addedQuestion2,
         "Добавленный второй вопрос должен совпадать с оригиналом");
+
   }
 }
