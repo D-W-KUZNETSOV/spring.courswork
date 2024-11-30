@@ -26,11 +26,6 @@ class JavaQuestionServiceTest {
     assertTrue(actual.contains(model));
   }
 
-
-  @Test
-  void testAdd() {
-  }
-
   @Test
   @DisplayName("Проверяет удаление вопроса")
   void remove() {
@@ -117,17 +112,17 @@ class JavaQuestionServiceTest {
     assertEquals("Вопрос не может быть пустым", exception.getMessage());
   }
 
-  @Test
-  @DisplayName("Проверка на  наличие повторяющегося вопроса")
-  void testAddDuplicateQuestion() {
 
+  @Test
+  @DisplayName("Проверка на наличие повторяющегося вопроса")
+  void testAddDuplicateQuestion() {
     Question question = new Question("Как день", "Как ночь");
     javaQuestionService.add(question);
 
     QuestionNotFoundException exception = assertThrows(QuestionNotFoundException.class, () -> {
       javaQuestionService.add(question);
     });
-    assertEquals("Как день", exception.getMessage());
+    assertEquals("вопрос не найден:[Как день]", exception.getMessage());
   }
 
   @Test
